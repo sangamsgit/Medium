@@ -1,49 +1,188 @@
-body{
+html,
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
 }
 
 
-navbar{
+navbar {
     display: flex;
     border-bottom: 1px solid black;
+    height: 73px;
 
 }
 
-navbar ul{
+.visible {
+    display: inline;
+}
+
+navbar ul {
     display: flex;
     list-style: none;
     gap: 2em;
     position: relative;
-    left: 37em;
+    left: 3em;
     align-items: center;
     /* border: 3px solid purple; */
+    display: none;
 }
 
-navbar ul li{
+navbar ul li {
     list-style-type: none;
 
 }
- navbar a{
+
+/* navbar a{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 100;
     color: #242424;
- }
+ } */
 
- .nav-btn{
+.nav-btn {
     background: black;
     color: white;
     padding: 12px 15px;
     border: none;
     border-radius: 15em;
     text-align: center;
- }
+    width: 123px;
+    margin-top: 15px;
+}
 
- img{
+.logo-img {
     width: 105px;
     height: 56px;
-    padding: 5px;
-    margin-left: 10em;
+    padding: 9px;
+    margin-left: 2em;
+    margin-right: 7em;
+}
+
+
+.hero-title {
+    margin-left: 15px;
+    font-size: 5rem;
+    line-height: 0.74em;
+    font-weight: 300;
+}
+
+.hero-title1 {
+    display: block;
+}
+
+
+.hero-box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 87px;
+}
+
+.hero-subtitle {
+    font-size: 19px;
+    position: relative;
+    margin-left: 15px;
+    color: #626060;
+}
+
+.hero-img {
+    width: 51px;
+    position: relative;
+    height: 61px;
+    left: 7px;
+    display: none;
+}
+
+.hero-box {
+    display: inline;
+    margin-top: 5px;
+    /* gap: 1em; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    display: none;
+}
+
+.links ul {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: #626060;
+}
+
+.hero-box1>*:not(:last-child) {
+    margin-bottom: 3px;
+}
+
+.hero-btn {
+    background: green;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 15em;
+    text-align: center;
+    cursor: pointer;
+    width: 191px;
+    margin-left: 15px;
+    margin-top: 42px;
+    font-size: 1em;
+}
+
+.help {
+    color: #a1a1a1;
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 15px;
+    font-family: Inter;
+    line-height: auto;
+    border-style: none;
+    outline: none;
+    width: 59px;
+}
+
+.btn {
+    background-color: #0e0e0e;
+    height: 37.599998474121094px;
+    width: 103.69000244140625px;
+    left: 201px;
+    top: 10px;
+    position: absolute;
+}
+
+.mobile-footer {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    background: black;
+    height: 75px;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 47px;
+}
+
+
+.mobile-footer a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    left: 15px;
 }

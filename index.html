@@ -7,13 +7,18 @@
     <title>Medium</title>
 </head>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" media="(max-width:375px)" href="responsive.css">
+<link rel="stylesheet" media="(max-width:575px)" href="responsive.css">
 <link rel="icon" type="image/x-icon" href="logo.svg">
 
 <body>
     <navbar>
         <a href="#">
             <img class="logo-img" src="./logo.svg" alt="logo">
+        </a>
+        <a href="#">
+            <button class="nav-btn visible">
+                    Get Started
+                </button>
         </a>
         <ul>
             <a href="#">
@@ -33,10 +38,33 @@
     </navbar>
     <main>
         <div class="hero-box">
-            <h1 class="hero-title"><span class="hero-title1">Human</span> stories & ideas</h1>
+            <div class="hero-box1">
+                <h1 class="hero-title"><span class="hero-title1">Human</span> stories & ideas</h1>
+                <h6 class="hero-subtitle">A place to read, write, and deepen your understanding</h6>
+                <a href="login.html"><button class="hero-btn">
+                    Start Reading
+                </button> 
+                </a>
+            </div>
             <img class="hero-img" src="hero.png" alt="flower image">
         </div>
     </main>
+<!-- Footer Visible For Mobile Only -->
+        <div class="mobile-footer">
+            <a href="#"><li>
+                About
+            </li></a>
+            <a href="#"><li>
+                Helps
+            </li></a>
+            <a href="#"><li>
+                Terms
+            </li></a>
+            <a href="#"><li>
+                Privacy
+            </li></a>
+        </div>
+<!-- Footer for Bigger Screens -->
     <footer>
         <div class="links">
             <ul class="footer-list">
@@ -53,6 +81,7 @@
                 </a><a href="#">
                     <li>Blog</li>
                 </a>
+                <a href="#">
                     <li>Privacy</li>
                 </a><a href="#">
                     <li>Terms</li>
